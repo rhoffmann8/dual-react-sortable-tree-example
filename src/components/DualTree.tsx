@@ -66,7 +66,7 @@ export function DualTree<L extends TreeItem<L>, R extends TreeItem<R>> ({
       <Tree<R>
         {...rightTreeProps}
         treeData={rightTreeData}
-        onChange={data => { setRightTreeData(data) }}
+        onChange={data => setRightTreeData(data) }
         onMoveNode={data => setTreesChanged({ ...treesChanged, right: data })}
       />
     </>
